@@ -1,17 +1,62 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Mi página</title>
-    </head>
-    <body>
-        <h1>Bienvenidos</h1>
-        <p>Yo soy Macarena, voy al Colegio Calasanz. </p>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio de Informática</title>
+  <link rel="stylesheet" href= "./index_estilo.css" />
+</head>
+<body>
+  <header>
+    <h1>Portafolio de Informática</h1>
+    <h2>Primeros pasos en diseño web</h2>
+    <nav>
+      <a href="https://macarenascarfo.github.io/informatica/">Repositorio GitHub</a>
+      <a href="https://drive.google.com/drive/u/1/folders/1HprtJde3albpm5zfTidrB5lBYc44dyiS">Carpeta en Drive</a>
+      <a href="https://codefinity.com/get-started/spa/v8_new_brl?utm_source=google&utm_medium=cpc&utm_campaign=21415070126&utm_content=162332657925&utm_term=freecodecamp&dki=Freecodecamp&gad_source=1&gad_campaignid=21415070126&gbraid=0AAAAABTeUgQQVv4CzIAcnlHCdMinyfx04&gclid=Cj0KCQjwj8jDBhD1ARIsACRV2TsUSpTNXkTn6z6ZPcru7r7p9TnU0GCEVAAKpKzuJ9hihbXcibfi6P0aAng9EALw_wcB">FreeCodeCamp</a>
+      <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+    </nav>
+  </header>
+  <main>
+    <aside>
+        <h3>Ejercicios realizados:</h3>
+        <ol>
+            <li><a href="./enlace.html">Receta</a></li>
+            <li><a href="./tabla.html" target="_blank">Tabla</a></li>
+            <li> <a href="./tabla2.html">Tabla 2</a></li>
+            <li> <a href="./semantica.html">Mafalda</a></li>
+        </ol>
+    </aside>
+    <section class="contenido">
+      <article class="card">
+        <h3>Sobre mí:</h3>
+        <p>Hola, mi nombre es <strong>Macarena Scarfo</strong>, estudiante de <strong>3° Año</strong> en el <strong>Colegio Calasanz</strong> y esta es mi página personal. Estoy aprendiendo a construir sitios web usando HTML y CSS. Me gusta la tecnología, el diseño y la programación.</p>
+      </article>
+
+      <article class="card">
+        <h3>Lo que aprendí hasta ahora:</h3>
         <ul>
-            <li><a href="./enlace.html">Ejercicio1<a></li>
-            <li><a href="./tabla.html"target="_blank">Ejercicio2</a></li>
-            <li><a href="./tabla2.html">Ejercicio 3</a></li>
-            <li><a href="./semantica.html">Ejercicio 4</a></li>
+          <li>Crear estructuras HTML básicas</li>
+          <li>Insertar imágenes, enlaces y tablas</li>
+          <li>Usar etiquetas semánticas correctamente</li>
+          <li>Aplicar estilos usando CSS externo</li>
         </ul>
-        <img src="./imagen.jpg">
-    </body>
+      </article>
+
+      <article class="card">
+        <h3>Herramientas que estoy usando:</h3>
+        <div class="iconos">
+          <img src="./vsc.jpg" alt="VS Code" />
+          <img src="./html.jpg" alt="HTML" />
+          <img src="./css.jpg" alt="CSS" />
+          <img src="./chrome.png" alt="Chrome" />
+        </div>
+      </article>
+    </section>
+</main>
+    <footer>
+    <p>© 2025 Mary Zambrano - Informática</p>
+    <a href="#">Contacto</a>
+  </footer>
+</body>
 </html>

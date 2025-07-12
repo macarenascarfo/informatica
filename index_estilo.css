@@ -1,0 +1,88 @@
+/* Fondo general y tipografía */
+body {
+  font-family: sans-serif;
+  background-color: #f8f6fc;
+  color: #333;
+}
+
+/* Encabezado */
+header {
+  background-color: #501bc3;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+nav {
+  margin-top: 1em;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Main Layout */
+main {
+  display: flex;
+  padding: 2em;
+}
+
+/* Sidebar */
+aside {
+  width: 20%;
+  background-color: #f0e6f9;
+  padding: 1em;
+  border-right: 3px solid #5d00a3;
+}
+
+aside a {
+  color: #5d00a3;
+  text-decoration: none;
+}
+
+/* Contenido */
+.contenido {
+  width: 80%;
+  padding: 0 2em;
+}
+
+/* Tarjetas */
+.card {
+  background-color: white;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Iconos */
+.iconos {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.iconos img {
+  width: 50px;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #2c0147;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+  display: block;
+  margin-top: 0.5em;
+}
