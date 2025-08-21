@@ -1,12 +1,45 @@
 /*selector de etiqueta*/
 h1{
-    color: red;
+    color: rgb(224, 174, 235);
 }
 h2{
-    color: blue;
+    color: rgb(208, 117, 231);
 }
 /*selector de clase*/
 .oscuro{
     background-color: black;
     color: white;
+    padding: 2rem 1rem;
+}
+    /*Selector de clase*/
+.oscuro {
+    background-color: rgb(174, 120, 196);
+    color: aliceblue;
+}
+/*Selecor ID*/
+#Biografia{
+    background-color: rgb(75, 20, 88);
+    color: rgb(0, 0, 0);
+}
+#Frases{
+    background-color: rgb(75, 20, 88);
+    color: black;
+}
+footer a {
+    transition: color 0.3s ease;
+  }
+  footer a:hover {
+    color: rgb(61, 7, 68);
+  }
+  footer {
+    background-color: #8b5e3c;
+    color: #fff8ec;
+    text-align: center;
+    padding: 1rem;
+  }  
+header{
+    background-image: url("./VIOLETA.jpg!w700wp");
+    background-position: center;
+    text-align: center;
+    padding: 3rem 1rem;
 }
