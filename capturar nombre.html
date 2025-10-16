@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulario de Bienvenida</title>
+</head>
+<body>
+  <h2>Registro del estudiante</h2>
+
+  <form id="formulario" onsubmit="enviarDatos(event)">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required /><br/><br/>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" required /><br/><br/>
+
+    <label for="curso">Curso:</label>
+    <input type="text" id="curso" required /><br/><br/>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script>
+    function enviarDatos(event) {
+      event.preventDefault(); // evitar que el formulario recargue la página
+
+      const nombre = document.getElementById('nombre').value.trim();
+      const apellido = document.getElementById('apellido').value.trim();
+      const curso = document.getElementById('curso').value.trim();
+
+      if (!nombre || !apellido || !curso) {
+        alert('Por favor, completa todos los campos.');
+        return;
+      }
+
+      // Crear el contenido HTML para la nueva página
+      const contenido = `
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+          <meta charset="UTF-8" />
+          <title>Bienvenida</title>
+        </head>
+        <body>
+          <h1>¡Bienvenido/a, ${nombre} ${apellido}!</h1>
+          <p>Estás registrado en el curso: <strong>${curso}</strong>.</p>
+        </body>
+        </html>
+      `;
+
+      // Abrir una nueva ventana y escribir el contenido
+      const nuevaVentana = window.open();
+      nuevaVentana.document.write(contenido);
+      nuevaVentana.document.close();
+    }
+  </script>
+</body>
+</html>
